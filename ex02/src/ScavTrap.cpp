@@ -6,24 +6,27 @@
 /*   By: malbrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:43:44 by malbrand          #+#    #+#             */
-/*   Updated: 2022/07/07 16:47:23 by malbrand         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:06:32 by malbrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.class.hpp"
 
-ScavTrap::ScavTrap(void) : _name("")
+ScavTrap::ScavTrap(void) : ClapTrap("")
 {
 	std::cout << "SCAVTRAP : Constructor" << std::endl;
-	_h_points = 100;
-	_e_points = 50;
-	_a_damage = 20;
+	this->_h_points = 100;
+	this->_e_points = 50;
+	this->_a_damage = 20;
 	return ;
 }
 
-ScavTrap::ScavTrap(std::string name) : _name(name), _h_points(100), _e_points(50), _a_damage(20)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "SCAVTRAP : " << _name << " Constructor" << std::endl;
+	this->_h_points = 100;
+	this->_e_points = 50;
+	this->_a_damage = 20;
 	return ;
 }
 

@@ -6,7 +6,7 @@
 /*   By: malbrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 16:58:53 by malbrand          #+#    #+#             */
-/*   Updated: 2022/07/07 17:19:58 by malbrand         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:04:23 by malbrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 
 class FragTrap : public ClapTrap
 {
-	private : 
-				std::string	_name;
-				int			_h_points;
-				int			_e_points;
-				int			_a_damage;
 	public :
 				FragTrap(void);
 				FragTrap(std::string name);

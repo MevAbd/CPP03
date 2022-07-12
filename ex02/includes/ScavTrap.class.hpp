@@ -6,7 +6,7 @@
 /*   By: malbrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 15:41:31 by malbrand          #+#    #+#             */
-/*   Updated: 2022/07/07 16:45:43 by malbrand         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:04:34 by malbrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 
 class ScavTrap : public ClapTrap
 {
-	private : 
-				std::string	_name;
-				int			_h_points;
-				int			_e_points;
-				int			_a_damage;
 	public :
 				ScavTrap(void);
 				ScavTrap(std::string name);

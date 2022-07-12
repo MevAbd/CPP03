@@ -6,24 +6,27 @@
 /*   By: malbrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 17:01:48 by malbrand          #+#    #+#             */
-/*   Updated: 2022/07/07 17:19:20 by malbrand         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:05:41 by malbrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.class.hpp"
 
-FragTrap::FragTrap(void) : _name("")
+FragTrap::FragTrap(void) : ClapTrap("")
 {
 	std::cout << "FRAGTRAP : Constructor" << std::endl;
-	_h_points = 100;
-	_e_points = 100;
-	_a_damage = 30;
+	this->_h_points = 100;
+	this->_e_points = 100;
+	this->_a_damage = 30;
 	return ;
 }
 
-FragTrap::FragTrap(std::string name) : _name(name), _h_points(100), _e_points(100), _a_damage(30)
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "FRAGTRAP : " << _name << " Constructor" << std::endl;
+	this->_h_points = 100;
+	this->_e_points = 100;
+	this->_a_damage = 30;
 	return ;
 }
 

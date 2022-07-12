@@ -6,7 +6,7 @@
 /*   By: malbrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 12:58:40 by malbrand          #+#    #+#             */
-/*   Updated: 2022/07/07 15:01:48 by malbrand         ###   ########.fr       */
+/*   Updated: 2022/07/12 11:53:03 by malbrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class ClapTrap
 {
-	private : 
+	protected : 
 				std::string	_name;
 				int			_h_points;
 				int			_e_points;
